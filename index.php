@@ -35,6 +35,7 @@
                     <li class="nav-item"><a class="nav-link">Pricing</a> </li>
                     <li class="nav-item"><a href="signin.php" class="nav-link">Login</a> </li>
                     <li class="nav-item"><a href="signup.php" class="nav-link">Sign up</a> </li>
+                    <li class="nav-item"><a href="dashboard.php" class="nav-link">Dashboard</a> </li>
                 </ul>
             </div>
         </div>
