@@ -1,3 +1,10 @@
+
+<?php 
+    require_once "config.php";
+    require "session.php"; 
+    is_login();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,11 +25,20 @@
                     <div class="logo">
                         <h3 class="text-center">Slackbot</h3>
                     </div>
+                  
+                        <div class="user-welcome text-center mt-1">Welcome <span class="text-success"> <?php echo $_SESSION["login_fullname"] ?? ''; ?></span></div> 
+                        <div class="user-welcome text-center mt-1">Your Email is <span class="text-success"> <?php echo $_SESSION["login_email"] ?? ''; ?></span></div>  
+
+                        <div class="sidebar-info">
+                            <h3 class="mt-4">Basics</h3>
+                            <ul>
+                                <li><i class="fa fa-check"></i> View only your conversation.</li>
+
                         <div class="user-welcome text-center mt-1">Welcome <span class="text-success">Joshua</span></div>  
                         <div class="sidebar-info">
                             <h3 class="mt-4">Basics</h3>
                             <ul>
-                                <li><i class="fa fa-check"></i> Lorem lique earum voluptatibus.</li>
+                              <li><i class="fa fa-check"></i> Lorem lique earum voluptatibus.</li>
                                 <li><i class="fa fa-check"></i> Lorem lique earum voluptatibus.</li>
                                 <li><i class="fa fa-check"></i> Lorem lique earum voluptatibus.</li>
                                 <li><i class="fa fa-check"></i> Lorem lique earum voluptatibus.</li>
@@ -41,6 +57,34 @@
                             </div>
                     </header>
                     <hr>
+
+                
+                        <div class="section-info">
+                            <h3 class="text-grey">Details here</h3>
+                            <div class="wrapper mt-5 mb-5">
+                                <?php 
+                                    $user_email =  $_SESSION["login_email"];
+                                    $sql = " select * from conversation where email = '$user_email' ";
+    
+                                    $result = mysqli_query($conn, $sql);
+                                    
+                                while( $row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                                    $username = $row['username'];
+                                    $conversation = $row['conversation'];
+
+                                ?> 
+                            <div class="card d-flex p-4 text-white">
+                                    <img src="assets/images/disability.svg" alt="user-image" width="50">
+                                    <span ><?php echo $username ?? ''; ?></span>
+                                <p><?php echo $conversation ?? ''; ?></p>
+                            </div>
+                            <br />
+                                <?php }?>
+                                
+                        </div>
+                                                        
+                         <div class="input d-flex mt-5">
+
 
                         <div class="section-info">
                             <h3 class="text-grey">Details here</h3>
@@ -62,6 +106,7 @@
 
 
                             <div class="input d-flex mt-5">
+
                                 <input type="text" class="form-control mr-4" placeholder="Please type your message here">
                                 <button class="btn btn-primary" style="height: auto;">ENTER </button>
                             </div>

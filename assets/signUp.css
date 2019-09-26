@@ -88,6 +88,14 @@ body{
 
 }
 
+.alert-php{
+    background: red ;
+    border: 1px solid red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+
+}
 
 .hasError .form-control{
     border: 1px solid red;
