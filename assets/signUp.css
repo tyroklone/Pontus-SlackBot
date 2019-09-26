@@ -82,7 +82,6 @@ body{
 }
 
 .alert{
-    display: none;
     background: red ;
     color: #fff;
 
