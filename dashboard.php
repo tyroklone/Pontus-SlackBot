@@ -61,7 +61,7 @@
                             <h3 class="text-grey">Details here</h3>
                             <div class="wrapper mt-5 mb-5">
                                 <?php 
-                                    $user_email =  $_COOKIE["slack_email"];
+                                    $user_email =  $_SESSION["login_email"];
                                     $sql = " select * from pon_convo where email = '$user_email' ";
     
                                     $result = mysqli_query($conn, $sql);
