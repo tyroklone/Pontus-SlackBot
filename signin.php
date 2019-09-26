@@ -41,7 +41,7 @@
                         else  
                         {  
                             //return false;  
-                            $error = "Your Login Name or Password is invalid";  
+                            $error = "Your Login Name or Password is invalid.....";  
                         }  
                     }         
                 }else {
