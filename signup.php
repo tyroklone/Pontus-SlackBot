@@ -71,10 +71,7 @@
                     <p align="center" >or</p>
 
 
-                    <div class="form-group">
-                            <button type="submit"  class="btn btn-primary btn-block">Signup with Google</button>
-                        </div>
-
+                   
                     <hr class="styled-hr">
 
                     <div class="" align="center">
