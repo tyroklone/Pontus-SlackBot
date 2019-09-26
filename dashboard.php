@@ -33,7 +33,6 @@
                             <ul>
                                 <li><i class="fa fa-check"></i> View only your conversation.</li>
 
-                        <div class="user-welcome text-center mt-1">Welcome <span class="text-success">Joshua</span></div>  
                         <div class="sidebar-info">
                             <h3 class="mt-4">Basics</h3>
                             <ul>
