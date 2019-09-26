@@ -11,7 +11,7 @@ require "session.php";
     $full_name = mysqli_real_escape_string($conn, $_POST['fullname']) ?? '';
     $username = mysqli_real_escape_string($conn, $_POST['username'])  ?? '';
     $email = mysqli_real_escape_string($conn, $_POST['email'])  ?? '';
-    $password = mysqli_real_escape_string($conn, $_POST['password'])  ?? '';
+    $password = $_POST['password']  ?? '';
     $_SESSION['errorMsg'] = '';
     $_SESSION['succussMsg'] = '';
        
