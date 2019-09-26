@@ -18,7 +18,7 @@ $host = "";
 $password = "";
 $conn = mysqli_connect("$host", "$user", "$password", "$dbname");
 // Database prefix
-define("PON_PREFIX","PON_");
+define("PON_PREFIX","pon_");
 // if user table does not exist creating
 $users_tbl = PON_PREFIX."users";
 $users_tbl_structure = "CREATE TABLE IF NOT EXISTS `$users_tbl` (
