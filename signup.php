@@ -67,11 +67,7 @@
 
                     <div class="form-group">
                         <button type="submit" name="reg" class="btn btn-primary btn-block"> continue </button>
-                    </div>
-                    <p align="center" >or</p>
-
-
-                   
+                    </div>                   
                     <hr class="styled-hr">
 
                     <div class="" align="center">
