@@ -25,20 +25,19 @@
 <header class="">
     <header class="top-header" role="banner">
 
-        <div class="navbar navbar-expand-lg">
-            <div class="navbar-brand">
-                <h2>SlackBot</h2>
+         <div class="navbar ">
+
+            <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                   <h6>Menu</h6>
+                </button>
+                    <a style="font-size: 30px; color: #323232" class="navbar-brand">SlackBot</a>
             </div>
-
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar">Menu</span>
-            </button>
-
-
-
-            <div class="navbar-collapse collapse offset" id="navbarSupportedContent">
+                
+                
+            <div class="navbar-collapse collapse offset" id="navbar">
                 <ul class="nav navbar-nav justify-content-end">
                     <li class="nav-item"><a class="nav-link">Home</a> </li>
                     <li class="nav-item"><a class="nav-link">Pricing</a> </li>
