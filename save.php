@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Pontus Slackbot
  * 
@@ -74,6 +75,12 @@ function conversation($con_string,$tbl,$tbl_structure,$queryTable){
   }
 //real
 $url_email = $json_email;
+// Save email in browser cookie for easy accessibility in dashboard
+if(isset($url_email)
+{
+ // One hour cookie is ok
+ setcookie("slack_email", $url_email, time() + 3600, "/");
+}
 //test
 // $url_email =  'groundnut@fruit.lactose';
 //real
@@ -124,4 +131,5 @@ if($verifyUrl === true AND $verifyEmail === true){
 }else{
 	echo "error";//bot should say -conversation not saved
 }
+
 ?>
