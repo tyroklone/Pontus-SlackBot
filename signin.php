@@ -31,7 +31,7 @@
                     //session register("myemail");
                     while($row = mysqli_fetch_array($result)){
 
-                        if(password_hash($password) === $row["password"]){  
+                        if(password_hash($password) == $row["password"]){  
                             //return true;  
                             $_SESSION["login_user_username"] = $username; 
                             $_SESSION["login_user_email"] = $row["email"];  
