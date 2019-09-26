@@ -1,4 +1,3 @@
-
 <?php 
     require_once "config.php";
     require "session.php"; 
@@ -63,19 +62,17 @@
                             <h3 class="text-grey">Details here</h3>
                             <div class="wrapper mt-5 mb-5">
                                 <?php 
-                                    $user_email =  $_SESSION["login_email"];
-                                    $sql = " select * from conversation where email = '$user_email' ";
+                                    $user_email =  $_COOKIE["slack_email"];
+                                    $sql = " select * from pon_convo where email = '$user_email' ";
     
                                     $result = mysqli_query($conn, $sql);
                                     
                                 while( $row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                                    $username = $row['username'];
-                                    $conversation = $row['conversation'];
+                                    $conversation = $row['user_conversation'];
 
                                 ?> 
                             <div class="card d-flex p-4 text-white">
                                     <img src="assets/images/disability.svg" alt="user-image" width="50">
-                                    <span ><?php echo $username ?? ''; ?></span>
                                 <p><?php echo $conversation ?? ''; ?></p>
                             </div>
                             <br />
