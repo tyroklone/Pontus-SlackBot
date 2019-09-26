@@ -90,11 +90,6 @@
                     </div>
 
                     <div class="form-group">
-                        <input id="username" class="form-control" type="text" placeholder="Type your Username here"/>
-                    </div>
-                    
-
-                    <div class="form-group">
                             <input id="password" name="password" class="form-control" type="password" placeholder="Password here"/>
                     </div>
 
