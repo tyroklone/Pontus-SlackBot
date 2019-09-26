@@ -33,15 +33,16 @@
 
                     </div>
 
-                    <div class="form-group">
-                        <div class="alert"></div>
-                    </div>
-                    <?php 
+                    <div class="form-group"> 
+                        <?php 
                         if(isset($_GET['error'])){
                             $errormsg =  urldecode($_GET['error']);
-                            echo "<script> alert('$errormsg');</script>";
+                            echo "<div class='alert'>".$errormsg."</div>";
                         }
                     ?>
+                        
+                    </div>
+                   
                     
                     <div class="form-group">
                         <input id="fullname" class="form-control" name="fullname"  type="text" placeholder="Type your full name here" required/>
