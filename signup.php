@@ -60,20 +60,7 @@
                     <div class="form-group">
                         <input id="password" class="form-control" name="password" type="password" placeholder="Password here" required/>
 
-                    <div class="form-group">
-                        <input id="email" class="form-control" type="text" placeholder="Type your email address here"/>
-                    </div>
-
                     
-                    <div class="form-group">
-                            <input id="name" class="form-control" type="text" placeholder="Type your full name here"/>
-                        </div>
-                        
-
-                    <div class="form-group">
-                            <input id="password" class="form-control" type="password" placeholder="Password here"/>
-                    </div>
-
                     <div class="form-group">
                         <input type="checkbox" class="form-check" /> 
                         <span>Keep me signed in</span>
