@@ -19,7 +19,7 @@
             if (is_post_request() && isset($_POST['login'])){
                 
                 $username = mysqli_real_escape_string($conn,$_POST['username']);
-                $password = mysqli_real_escape_string($conn,$_POST['password']);  
+                $password = $_POST['password'];  
 
                  
                 $sql = "SELECT * FROM users WHERE username = '$username' ";
@@ -31,7 +31,7 @@
                     //session register("myemail");
                     while($row = mysqli_fetch_array($result)){
 
-                        if(password_verify($password, $row["password"])){  
+                        if(password_hash($password) === $row["password"]){  
                             //return true;  
                             $_SESSION["login_user_username"] = $username; 
                             $_SESSION["login_user_email"] = $row["email"];  
