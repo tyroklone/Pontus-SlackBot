@@ -27,8 +27,8 @@
                    </div>
                </div> 
                <div class="col-lg-6 col-md-8 col-md-12">
-                    <form class="form"  method="POST" onsubmit="return validateForm() action="reg.php">
-                    <!-- <form class="form" onsubmit="return validateForm()"> -->
+                    <form class="form"  method="POST" onsubmit="return validateForm()" action="reg.php">
+                    <form class="form" onsubmit="return validateForm()">
 
                     <div class="form-header">
                         <h3 class="h-underline--blue">Sign Up</h3>
