@@ -85,9 +85,7 @@
                     <div class="form-group">
                         <input id="username" name="username" class="form-control" type="text" placeholder="Type your Username here"/>
 
-                    <div class="form-group">
-                        <div class="alert"></div>
-                    </div>
+                   
 
                     <div class="form-group">
                             <input id="password" name="password" class="form-control" type="password" placeholder="Password here"/>
