@@ -12,13 +12,13 @@
  ini_set("allow_url_fopen", 1);
 session_start();
 // Lets include some important files here
-$dbname = "";
-$user = "";
-$host = "";
-$password = "";
+$dbname = "ikhgynl5yi6ppldx";
+$user = "jse831u4uvmhykrg";
+$host = "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$password = "ji7u73u42vplhnzb";
 $conn = mysqli_connect("$host", "$user", "$password", "$dbname");
 // Database prefix
-define("PON_PREFIX","pon_");
+define("PON_PREFIX","PON_");
 // if user table does not exist creating
 $users_tbl = PON_PREFIX."users";
 $users_tbl_structure = "CREATE TABLE IF NOT EXISTS `$users_tbl` (
@@ -75,6 +75,12 @@ function conversation($con_string,$tbl,$tbl_structure,$queryTable){
   }
 //real
 $url_email = $json_email;
+// Save email in browser cookie for easy accessibility in dashboard
+if(isset($url_email)
+{
+ // One hour cookie is ok
+ setcookie("slack_email", $url_email, time() + 3600, "/");
+}
 //test
 // $url_email =  'groundnut@fruit.lactose';
 //real

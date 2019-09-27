@@ -86,17 +86,11 @@
                         <input id="username" name="username" class="form-control" type="text" placeholder="Type your Username here"/>
 
                     <div class="form-group">
-                        <div class="alert"></div>
-                    </div>
-
-                    <div class="form-group">
-                        <input id="username" class="form-control" type="text" placeholder="Type your Username here"/>
-                    </div>
-                    
+                        <!-- <div class="alert"></div> -->
+                    </div>                    
 
                     <div class="form-group">
                             <input id="password" name="password" class="form-control" type="password" placeholder="Password here"/>
-                            <input id="password" class="form-control" type="password" placeholder="Password here"/>
                     </div>
 
                     <div class="form-group">
@@ -106,7 +100,6 @@
 
                     <div class="form-group">
                         <button type="submit" name="login"  class="btn btn-primary btn-block">Sign In</button>
-                        <button type="submit"  class="btn btn-primary btn-block">Sign In</button>
                     </div>
 
                     <hr class="styled-hr">
