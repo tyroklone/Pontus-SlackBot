@@ -55,24 +55,24 @@
 
 </header>
 
-<section class="hero">
+<section class="container">
        <div class="row m-0">
-           <div class="col-lg-7">
+           <div class="col-lg-6 col-sm-12">
 
                <div class="hero-heading">
 
-                   <h2 class="">A better way to organize and share data within slack</h2>
+                   <h1 class="hero-htag">A better way to organize and share data within slack</h1>
                    <br>
-                   <p class="font-weight-bold" style="color: #7e7e7e">HNG SLACKBOT is built of sharing sharing knowledge and productive collaborations.
+                   <p class="font-weight-bold hero-ptag" style="color: #7e7e7e">HNG SLACKBOT is built of sharing sharing knowledge and productive collaborations.
                        SLACKBOT is built of sharing sharing knowledge and prodSLACKBOT is built of sharing sharing knowledge and prod</p>
+                       <a href="signin.php"><button class="btn btn-primary">  Get Started </button></a>
 
                </div>
 
            </div>
-           <div class="col-lg-5">
-               <div class="img-block">
-                   <img src="assets/image/bg-master.png" width="100%">
-
+           <div class="col-lg-6 col-sm-12">
+               <div class="img-block img-m">
+                   <img src="assets/image/bg-master.png" class="img-block img-fluid" >
                </div>
            </div>
        </div>

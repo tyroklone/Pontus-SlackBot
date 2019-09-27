@@ -9,17 +9,41 @@
 
 .img-block{
     width: 500px;
+    z-index: -1000;
 
 }
-
+/* Responsiveness for the avatar image */
+@media screen and (max-width: 400px) {
+    .img-block{
+        width: 100%;
+        justify-content: center;
+        margin-left: 14px;
+    }
+    .img-m {
+        margin: 2px  auto;
+    }
+}
+/* .btn-primary{
+    background: #2E4C81;
+} */
 .hero-heading{
     padding: 30px;
-    margin: 70px  auto;
+    margin: 30px  auto;
+}
+.img-m {
+    margin: 14px  auto;
+}
+.hero-htag{
+    line-height: 1.4;
+}
+.hero-ptag{
+    line-height: 1.6;
 }
 
 .top-header{
     box-shadow: 0 4px 25px 0 rgba(0,0,0,.1);
     padding: 10px 70px;
     width: 100% !important;
+    z-index: 1000;
 }
 
