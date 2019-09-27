@@ -28,23 +28,22 @@
                </div> 
                <div class="col-lg-6 col-md-8 col-md-12">
                     <form class="form"  method="POST" onsubmit="return validateForm() action="reg.php">
-                    <form class="form" onsubmit="return validateForm()">
+                    <!-- <form class="form" onsubmit="return validateForm()"> -->
 
                     <div class="form-header">
                         <h3 class="h-underline--blue">Sign Up</h3>
 
                     </div>
 
-                    <div class="form-group">
-                        <div class="alert"></div>
-                    </div>
-                    <?php 
+                    <div class="form-group"> 
+                        <?php 
                         if(isset($_GET['error'])){
                             $errormsg =  urldecode($_GET['error']);
-                            echo "<script> alert('$errormsg');</script>";
+                            echo "<div class='alert'>".$errormsg."</div>";
                         }
                     ?>
-                    
+                        
+                    </div>
                     <div class="form-group">
                         <input id="fullname" class="form-control" name="fullname"  type="text" placeholder="Type your full name here" required/>
                     </div>
@@ -60,20 +59,7 @@
                     <div class="form-group">
                         <input id="password" class="form-control" name="password" type="password" placeholder="Password here" required/>
 
-                    <div class="form-group">
-                        <input id="email" class="form-control" type="text" placeholder="Type your email address here"/>
-                    </div>
-
                     
-                    <div class="form-group">
-                            <input id="name" class="form-control" type="text" placeholder="Type your full name here"/>
-                        </div>
-                        
-
-                    <div class="form-group">
-                            <input id="password" class="form-control" type="password" placeholder="Password here"/>
-                    </div>
-
                     <div class="form-group">
                         <input type="checkbox" class="form-check" /> 
                         <span>Keep me signed in</span>
@@ -81,14 +67,13 @@
 
                     <div class="form-group">
                         <button type="submit" name="reg" class="btn btn-primary btn-block"><a href="signin.php"></a> continue </button>
-                        <button type="submit" class="btn btn-primary btn-block"><a href="signin.php"></a> continue </button>
                     </div>
-                    <p align="center" >or</p>
+                    <!-- <p align="center">or</p> -->
 
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                             <button type="submit"  class="btn btn-primary btn-block">Signup with Google</button>
-                        </div>
+                        </div> -->
 
                     <hr class="styled-hr">
 
